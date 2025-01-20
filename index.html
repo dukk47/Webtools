@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Checkliste</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #f9f9f9;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        li input[type="checkbox"] {
+            margin-right: 15px;
+            transform: scale(1.5);
+        }
+        .checked {
+            text-decoration: line-through;
+            color: #888;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Projekt Checkliste</h1>
+        <ul id="checklist">
+            <li><input type="checkbox" id="item1"> <label for="item1">Projektstand: Aktueller Stand dokumentieren</label></li>
+            <li><input type="checkbox" id="item2"> <label for="item2">Projektstand: Erreichte Meilensteine aufzeigen</label></li>
+            <li><input type="checkbox" id="item3"> <label for="item3">Nächste Schritte: Klare Aufgaben definieren</label></li>
+            <li><input type="checkbox" id="item4"> <label for="item4">Feedback: Kunden-Feedback integrieren</label></li>
+            <li><input type="checkbox" id="item5"> <label for="item5">Präsentations-PDF erstellen</label></li>
+            <li><input type="checkbox" id="item6"> <label for="item6">Einzelleistungen kennzeichnen</label></li>
+            <li><input type="checkbox" id="item7"> <label for="item7">Persönlichen Text verfassen</label></li>
+            <li><input type="checkbox" id="item8"> <label for="item8">Zeitmanagement sicherstellen</label></li>
+            <li><input type="checkbox" id="item9"> <label for="item9">Gleiche Redeanteile sicherstellen</label></li>
+        </ul>
+    </div>
+    <footer>
+        &copy; 2025 Projekt Checkliste - Entwickelt für GitHub Pages
+    </footer>
+
+    <script>
+        // Funktion zum Laden des Checklisten-Status
+        function loadChecklist() {
+            document.querySelectorAll('#checklist input[type="checkbox"]').forEach(checkbox => {
+                const checked = localStorage.getItem(checkbox.id);
+                checkbox.checked = checked === 'true';
+                if (checkbox.checked) {
+                    checkbox.parentElement.classList.add('checked');
+                }
+            });
+        }
+
+        // Funktion zum Speichern des Checklisten-Status
+        function saveChecklist(event) {
+            const checkbox = event.target;
+            localStorage.setItem(checkbox.id, checkbox.checked);
+            if (checkbox.checked) {
+                checkbox.parentElement.classList.add('checked');
+            } else {
+                checkbox.parentElement.classList.remove('checked');
+            }
+        }
+
+        // Ereignislistener hinzufügen
+        document.addEventListener('DOMContentLoaded', () => {
+            loadChecklist();
+            document.querySelectorAll('#checklist input[type="checkbox"]').forEach(checkbox => {
+                checkbox.addEventListener('change', saveChecklist);
+            });
+        });
+    </script>
+</body>
+</html>
