@@ -62,38 +62,61 @@
     <div class="container">
         <h1>Projekt Checkliste</h1>
 
-        <h2>1. Vorbereitung der Inhalte</h2>
-        <ul id="checklist">
+        <h2>Erster Teil der Präsentation</h2>
+
+        <h3>1. Vorbereitung</h3>
+        <ul>
             <li><input type="checkbox" id="item1"> <label for="item1">Überblick über den aktuellen Stand des Projekts erstellen</label></li>
             <li><input type="checkbox" id="item2"> <label for="item2">Die nächsten Schritte detailliert planen und beschreiben</label></li>
             <li><input type="checkbox" id="item3"> <label for="item3">Feedback von Kunden und Product Owner dokumentieren und einbinden</label></li>
         </ul>
 
-        <h2>2. Präsentationsgestaltung</h2>
+        <h3>2. Präsentationsgestaltung</h3>
         <ul>
             <li><input type="checkbox" id="item4"> <label for="item4">Inhalte als PDF vorbereiten</label></li>
             <li><input type="checkbox" id="item5"> <label for="item5">Einzelleistungen der Teammitglieder klar kennzeichnen</label></li>
             <li><input type="checkbox" id="item6"> <label for="item6">Persönlicher Text zu den wichtigsten Learnings verfassen</label></li>
         </ul>
 
-        <h2>3. Präsentation</h2>
+        <h3>3. Präsentation</h3>
         <ul>
             <li><input type="checkbox" id="item7"> <label for="item7">Sicherstellen, dass der Zeitrahmen von 60 Minuten eingehalten wird</label></li>
             <li><input type="checkbox" id="item8"> <label for="item8">Gleiche Redeanteile zwischen den Teammitgliedern sicherstellen</label></li>
-            <li><input type="checkbox" id="item9"> <label for="item9">Inhalte klar und strukturiert präsentieren</label></li>
-            <li><input type="checkbox" id="item10"> <label for="item10">Aktueller Projektstand darstellen</label></li>
-            <li><input type="checkbox" id="item11"> <label for="item11">Nächste Schritte erläutern</label></li>
-            <li><input type="checkbox" id="item12"> <label for="item12">Kunden- und Product Owner-Feedback präsentieren</label></li>
+            <li><input type="checkbox" id="item9"> <label for="item9">Aktueller Projektstand klar und strukturiert präsentieren</label></li>
+            <li><input type="checkbox" id="item10"> <label for="item10">Nächste Schritte erläutern</label></li>
+            <li><input type="checkbox" id="item11"> <label for="item11">Kunden- und Product Owner-Feedback präsentieren</label></li>
         </ul>
 
-        <h2>4. Abgabe</h2>
+        <h3>4. Abgabe</h3>
         <ul>
-            <li><input type="checkbox" id="item13"> <label for="item13">Präsentation als PDF sowie persönlichen Text bis 28. Januar 2025, 24:00 Uhr per E-Mail einreichen</label></li>
+            <li><input type="checkbox" id="item12"> <label for="item12">Präsentation als PDF sowie persönlichen Text bis 28. Januar 2025, 24:00 Uhr per E-Mail einreichen</label></li>
         </ul>
 
-        <h2>5. Prüfungstag</h2>
+        <h3>5. Prüfungstag</h3>
         <ul>
-            <li><input type="checkbox" id="item14"> <label for="item14">Prüfung am 29. Januar 2025, um 13:45 Uhr bereithalten</label></li>
+            <li><input type="checkbox" id="item13"> <label for="item13">Prüfung am 29. Januar 2025, um 13:45 Uhr bereithalten</label></li>
+        </ul>
+
+        <h2>Zweiter Teil der Präsentation</h2>
+
+        <h3>1. Werbekampagne</h3>
+        <ul>
+            <li><input type="checkbox" id="item14"> <label for="item14">Konzeption der Werbekampagne erstellen</label></li>
+            <li><input type="checkbox" id="item15"> <label for="item15">Umsetzung der Kampagne dokumentieren</label></li>
+            <li><input type="checkbox" id="item16"> <label for="item16">Ergebnisse der Kampagne analysieren und berichten</label></li>
+        </ul>
+
+        <h3>2. Zielgruppe und KPIs</h3>
+        <ul>
+            <li><input type="checkbox" id="item17"> <label for="item17">Zielgruppe definieren</label></li>
+            <li><input type="checkbox" id="item18"> <label for="item18">SMART-Ziele und KPIs festlegen</label></li>
+            <li><input type="checkbox" id="item19"> <label for="item19">Budget und Kanalwahl definieren</label></li>
+        </ul>
+
+        <h3>3. Reflektion</h3>
+        <ul>
+            <li><input type="checkbox" id="item20"> <label for="item20">Herausforderungen und Learnings beschreiben</label></li>
+            <li><input type="checkbox" id="item21"> <label for="item21">Empfehlungen für zukünftige Kampagnenplanung erstellen</label></li>
         </ul>
     </div>
     <footer>
@@ -103,7 +126,7 @@
     <script>
         // Funktion zum Laden des Checklisten-Status
         function loadChecklist() {
-            document.querySelectorAll('#checklist input[type="checkbox"]').forEach(checkbox => {
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
                 const checked = localStorage.getItem(checkbox.id);
                 checkbox.checked = checked === 'true';
                 if (checkbox.checked) {
@@ -126,7 +149,7 @@
         // Ereignislistener hinzufügen
         document.addEventListener('DOMContentLoaded', () => {
             loadChecklist();
-            document.querySelectorAll('#checklist input[type="checkbox"]').forEach(checkbox => {
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
                 checkbox.addEventListener('change', saveChecklist);
             });
         });
