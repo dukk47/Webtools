@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Präsentations Checkliste</title>
+    <title>Erweiterte Checkliste für die Präsentation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -60,49 +60,69 @@
 </head>
 <body>
     <div class="container">
-        <h1>Checkliste für die Präsentation</h1>
+        <h1>Erweiterte Checkliste für die Präsentation</h1>
 
         <h2>1. Bewertungsgrundlage</h2>
 
         <h3>Fachkompetenz (50%)</h3>
+        <h4>BundlePDP-Konzept (30%)</h4>
         <ul>
-            <li><input type="checkbox" id="item1"> <label for="item1">Ist das Konzept klar an der Zielsetzung der Aufgabe ausgerichtet?</label></li>
-            <li><input type="checkbox" id="item2"> <label for="item2">Wurden Kunde (mobilezone, sparhandy.de) und Produkt verständlich vorgestellt?</label></li>
-            <li><input type="checkbox" id="item3"> <label for="item3">Wurde die Herleitung der UX-Methodik nachvollziehbar erklärt?</label></li>
-            <li><input type="checkbox" id="item4"> <label for="item4">Wurde eine UX- und Usability-Analyse durchgeführt?</label></li>
-            <li><input type="checkbox" id="item5"> <label for="item5">Ist eine Konkurrenzanalyse enthalten?</label></li>
-            <li><input type="checkbox" id="item6"> <label for="item6">Wurde die Informationsarchitektur sinnvoll gestaltet?</label></li>
-            <li><input type="checkbox" id="item7"> <label for="item7">Sind Wireflows oder Wireframes (Low-/Mid-Fidelity) enthalten und passend?</label></li>
-            <li><input type="checkbox" id="item8"> <label for="item8">Ist die Idee innovativ und qualitativ hochwertig?</label></li>
-            <li><input type="checkbox" id="item9"> <label for="item9">Wurde technisches Tracking (Data-Layer-Events, Implementierung, Aktionen) verstanden und angewendet?</label></li>
-            <li><input type="checkbox" id="item10"> <label for="item10">Gibt es eine klare Zielvorstellung der Maßnahmen?</label></li>
-            <li><input type="checkbox" id="item11"> <label for="item11">Wurde ein Verständnis für Dateninterpretation demonstriert?</label></li>
+            <li><input type="checkbox" id="item1"> <label for="item1">Zielsetzung der Aufgabe und Kundenbedürfnisse klar dargestellt</label></li>
+            <li><input type="checkbox" id="item2"> <label for="item2">Detaillierte Herleitung und Umsetzung der UX-Methodik</label></li>
+            <li><input type="checkbox" id="item3"> <label for="item3">UX- und Usability-Analyse sowie Konkurrenzanalyse durchgeführt</label></li>
+            <li><input type="checkbox" id="item4"> <label for="item4">Informationsarchitektur, Wireflows und Wireframes vorhanden</label></li>
+        </ul>
+
+        <h4>Web-Analytics-Maßnahmen (20%)</h4>
+        <h5>Cookie-Banner und Data-Layer</h5>
+        <ul>
+            <li><input type="checkbox" id="item5"> <label for="item5">Hinweis auf Cookie-Banner und rechtliche Anforderungen (DSGVO)</label></li>
+            <li><input type="checkbox" id="item6"> <label for="item6">Ist das Tracking im Data-Layer auch ohne Zustimmung korrekt implementiert?</label></li>
+            <li><input type="checkbox" id="item7"> <label for="item7">Optionen im Google Tag Manager (GTM): Sicher oder rechtlich umstritten?</label></li>
+        </ul>
+        <h5>Tracking-Optimierung und Datenanalyse</h5>
+        <ul>
+            <li><input type="checkbox" id="item8"> <label for="item8">Tracking wird nach der Implementierung fortlaufend optimiert</label></li>
+            <li><input type="checkbox" id="item9"> <label for="item9">Beachtung von DSGVO-Datenminimierung</label></li>
+            <li><input type="checkbox" id="item10"> <label for="item10">Vermeidung voreiliger Dateninterpretation</label></li>
+        </ul>
+        <h5>Event-Tracking und Hypothesenbildung</h5>
+        <ul>
+            <li><input type="checkbox" id="item11"> <label for="item11">Custom Tracking-Events beschrieben und korrekt implementiert</label></li>
+            <li><input type="checkbox" id="item12"> <label for="item12">Sinnvolle Hypothesen und Fragestellungen entwickelt</label></li>
         </ul>
 
         <h3>2. Wissenschaftliches Arbeiten (20%)</h3>
         <ul>
-            <li><input type="checkbox" id="item12"> <label for="item12">Sind Quellen und Informationen korrekt geprüft, bewertet und zitiert?</label></li>
-            <li><input type="checkbox" id="item13"> <label for="item13">Wurden Fachbegriffe präzise definiert?</label></li>
+            <li><input type="checkbox" id="item13"> <label for="item13">Quellen korrekt geprüft, bewertet und zitiert</label></li>
+            <li><input type="checkbox" id="item14"> <label for="item14">Fachbegriffe präzise definiert und angewendet</label></li>
         </ul>
 
         <h3>3. Kommunikative Kompetenz (20%)</h3>
         <ul>
-            <li><input type="checkbox" id="item14"> <label for="item14">Wurde eine klare und verständliche Sprache verwendet?</label></li>
-            <li><input type="checkbox" id="item15"> <label for="item15">Ist der Fachsprachgebrauch präzise?</label></li>
-            <li><input type="checkbox" id="item16"> <label for="item16">Wirkt das Auftreten sicher und überzeugend?</label></li>
-            <li><input type="checkbox" id="item17"> <label for="item17">Ist die Argumentation logisch und stark?</label></li>
-            <li><input type="checkbox" id="item18"> <label for="item18">Werden komplexe Sachverhalte einfach und verständlich dargestellt?</label></li>
-            <li><input type="checkbox" id="item19"> <label for="item19">Wurde Reflexionsfähigkeit gezeigt?</label></li>
+            <li><input type="checkbox" id="item15"> <label for="item15">Klare, präzise und verständliche Sprache verwendet</label></li>
+            <li><input type="checkbox" id="item16"> <label for="item16">Fachsprachlicher Ausdruck sicher und überzeugend</label></li>
+            <li><input type="checkbox" id="item17"> <label for="item17">Komplexe Sachverhalte verständlich dargestellt</label></li>
+            <li><input type="checkbox" id="item18"> <label for="item18">Reflexionsfähigkeit bei Analysen demonstriert</label></li>
         </ul>
 
         <h3>4. Medienkompetenz (10%)</h3>
         <ul>
-            <li><input type="checkbox" id="item20"> <label for="item20">Wurde sicher mit den eingesetzten Medien gearbeitet?</label></li>
-            <li><input type="checkbox" id="item21"> <label for="item21">Sind die gewählten Medien passend und effektiv?</label></li>
+            <li><input type="checkbox" id="item19"> <label for="item19">Sicherer Umgang mit eingesetzten Medien</label></li>
+            <li><input type="checkbox" id="item20"> <label for="item20">Medien passend und effektiv für die Darstellung genutzt</label></li>
+        </ul>
+
+        <h2>Zusatz: Leitfragen für die Präsentation</h2>
+        <ul>
+            <li><input type="checkbox" id="item21"> <label for="item21">Wie wird das Tracking an die DSGVO-Anforderungen angepasst?</label></li>
+            <li><input type="checkbox" id="item22"> <label for="item22">Welche Vorteile bietet die Nutzung des Data-Layers für Events vor der Zustimmung?</label></li>
+            <li><input type="checkbox" id="item23"> <label for="item23">Welche Hypothesen konnten durch erste Daten geprüft werden?</label></li>
+            <li><input type="checkbox" id="item24"> <label for="item24">Wie wird sichergestellt, dass die Datenanalyse nicht von kognitiven Verzerrungen beeinflusst wird?</label></li>
+            <li><input type="checkbox" id="item25"> <label for="item25">Welche Fragestellungen oder Optimierungsansätze ergeben sich aus den ersten Tracking-Daten?</label></li>
         </ul>
     </div>
     <footer>
-        &copy; 2025 Präsentations Checkliste - Entwickelt für GitHub Pages
+        &copy; 2025 Erweiterte Checkliste - Entwickelt für GitHub Pages
     </footer>
 
     <script>
