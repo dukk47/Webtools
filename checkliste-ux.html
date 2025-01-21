@@ -6,85 +6,93 @@
     <title>Erweiterte Checkliste für die Präsentation</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.8;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f0f4f8;
-            color: #333;
+            background-color: #f9faff;
+            color: #2c3e50;
         }
         .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
             background: #ffffff;
-            border-radius: 10px;
+            border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         h1 {
             text-align: center;
-            color: #0056b3;
-            font-size: 2rem;
-            margin-bottom: 20px;
+            color: #4c51bf;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
         }
         h2 {
-            margin-top: 30px;
-            color: #004085;
-            font-size: 1.5rem;
-            border-bottom: 2px solid #d1e7fd;
-            padding-bottom: 5px;
+            margin-top: 20px;
+            color: #4c51bf;
+            font-size: 1.8rem;
+            border-bottom: 2px solid rgba(76, 81, 191, 0.5);
+            padding-bottom: 0.5rem;
         }
         h3, h4, h5 {
-            margin-top: 20px;
-            color: #0056b3;
-            font-size: 1.25rem;
+            margin-top: 15px;
+            color: #2c3e50;
         }
         ul {
             list-style: none;
             padding: 0;
         }
         li {
-            background: #f8f9fa;
+            background: rgba(76, 81, 191, 0.1);
             margin: 10px 0;
             padding: 15px;
             border-radius: 8px;
-            border: 1px solid #dee2e6;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             display: flex;
             align-items: center;
-            transition: background-color 0.3s ease;
+            transition: transform 0.3s ease;
         }
         li:hover {
-            background: #e2e6ea;
+            transform: translateY(-3px);
         }
         li input[type="checkbox"] {
             margin-right: 15px;
-            transform: scale(1.4);
-        }
-        li label {
-            font-size: 1rem;
-            color: #495057;
+            transform: scale(1.5);
+            accent-color: #4c51bf;
         }
         .checked {
             text-decoration: line-through;
-            color: #868e96;
+            color: #95a5a6;
         }
         footer {
             text-align: center;
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #6c757d;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #95a5a6;
         }
-        footer a {
-            color: #0056b3;
-            text-decoration: none;
+        .icon-circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(76, 81, 191, 0.5);
+            border-radius: 50%;
+            width: 8rem;
+            height: 8rem;
+            transition: transform 0.3s ease;
+            margin: 1rem auto;
         }
-        footer a:hover {
-            text-decoration: underline;
+        .icon-circle img {
+            width: 60%;
+            height: 60%;
+            object-fit: contain;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="icon-circle">
+            <img src="https://via.placeholder.com/150" alt="Icon">
+        </div>
         <h1>Erweiterte Checkliste für die Präsentation</h1>
 
         <h2>1. Bewertungsgrundlage</h2>
