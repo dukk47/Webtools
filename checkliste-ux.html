@@ -27,80 +27,86 @@
             height: 60%;
             object-fit: contain;
         }
+        .section-container {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
+    <!-- Hero Section -->
     <div class="hero-bg py-10 text-white">
         <div class="text-center">
-            <h1 class="text-4xl font-bold">Erweiterte Checkliste für die Präsentation</h1>
+            <h1 class="text-4xl font-extrabold">Erweiterte Checkliste für die Präsentation</h1>
             <p class="text-lg mt-4">Ein Leitfaden für eine strukturierte und erfolgreiche Präsentation</p>
         </div>
     </div>
 
-    <div class="section-container bg-white shadow-md rounded-lg mx-auto mt-10 p-6 max-w-4xl">
-        <h2 class="text-2xl font-semibold text-blue-600">1. Bewertungsgrundlage</h2>
+    <!-- Main Content -->
+    <div class="section-container bg-gray-800 shadow-lg rounded-lg mx-auto mt-10 p-6 max-w-4xl">
+        <h2 class="text-2xl font-semibold text-purple-400">1. Bewertungsgrundlage</h2>
 
-        <h3 class="text-xl font-semibold mt-4">Fachkompetenz (50%)</h3>
-        <h4 class="font-semibold mt-2">BundlePDP-Konzept (30%)</h4>
+        <h3 class="text-xl font-semibold mt-4 text-blue-300">Fachkompetenz (50%)</h3>
+        <h4 class="font-semibold mt-2 text-blue-200">BundlePDP-Konzept (30%)</h4>
         <ul class="list-disc list-inside">
-            <li><input type="checkbox" id="item1"> Zielsetzung der Aufgabe und Kundenbedürfnisse klar dargestellt</li>
-            <li><input type="checkbox" id="item2"> Detaillierte Herleitung und Umsetzung der UX-Methodik</li>
-            <li><input type="checkbox" id="item3"> UX- und Usability-Analyse sowie Konkurrenzanalyse durchgeführt</li>
-            <li><input type="checkbox" id="item4"> Informationsarchitektur, Wireflows und Wireframes vorhanden</li>
+            <li><input type="checkbox" id="item1" class="mr-2"> Zielsetzung der Aufgabe und Kundenbedürfnisse klar dargestellt</li>
+            <li><input type="checkbox" id="item2" class="mr-2"> Detaillierte Herleitung und Umsetzung der UX-Methodik</li>
+            <li><input type="checkbox" id="item3" class="mr-2"> UX- und Usability-Analyse sowie Konkurrenzanalyse durchgeführt</li>
+            <li><input type="checkbox" id="item4" class="mr-2"> Informationsarchitektur, Wireflows und Wireframes vorhanden</li>
         </ul>
 
-        <h4 class="font-semibold mt-2">Web-Analytics-Maßnahmen (20%)</h4>
-        <h5 class="font-semibold mt-2">Cookie-Banner und Data-Layer</h5>
+        <h4 class="font-semibold mt-2 text-blue-200">Web-Analytics-Maßnahmen (20%)</h4>
+        <h5 class="font-semibold mt-2 text-blue-100">Cookie-Banner und Data-Layer</h5>
         <ul class="list-disc list-inside">
-            <li><input type="checkbox" id="item5"> Hinweis auf Cookie-Banner und rechtliche Anforderungen (DSGVO)</li>
-            <li><input type="checkbox" id="item6"> Ist das Tracking im Data-Layer auch ohne Zustimmung korrekt implementiert?</li>
-            <li><input type="checkbox" id="item7"> Optionen im Google Tag Manager (GTM): Sicher oder rechtlich umstritten?</li>
+            <li><input type="checkbox" id="item5" class="mr-2"> Hinweis auf Cookie-Banner und rechtliche Anforderungen (DSGVO)</li>
+            <li><input type="checkbox" id="item6" class="mr-2"> Ist das Tracking im Data-Layer auch ohne Zustimmung korrekt implementiert?</li>
+            <li><input type="checkbox" id="item7" class="mr-2"> Optionen im Google Tag Manager (GTM): Sicher oder rechtlich umstritten?</li>
         </ul>
 
-        <h5 class="font-semibold mt-2">Tracking-Optimierung und Datenanalyse</h5>
+        <h5 class="font-semibold mt-2 text-blue-100">Tracking-Optimierung und Datenanalyse</h5>
         <ul class="list-disc list-inside">
-            <li><input type="checkbox" id="item8"> Tracking wird nach der Implementierung fortlaufend optimiert</li>
-            <li><input type="checkbox" id="item9"> Beachtung von DSGVO-Datenminimierung</li>
-            <li><input type="checkbox" id="item10"> Vermeidung voreiliger Dateninterpretation</li>
+            <li><input type="checkbox" id="item8" class="mr-2"> Tracking wird nach der Implementierung fortlaufend optimiert</li>
+            <li><input type="checkbox" id="item9" class="mr-2"> Beachtung von DSGVO-Datenminimierung</li>
+            <li><input type="checkbox" id="item10" class="mr-2"> Vermeidung voreiliger Dateninterpretation</li>
         </ul>
 
-        <h5 class="font-semibold mt-2">Event-Tracking und Hypothesenbildung</h5>
+        <h5 class="font-semibold mt-2 text-blue-100">Event-Tracking und Hypothesenbildung</h5>
         <ul class="list-disc list-inside">
-            <li><input type="checkbox" id="item11"> Custom Tracking-Events beschrieben und korrekt implementiert</li>
-            <li><input type="checkbox" id="item12"> Sinnvolle Hypothesen und Fragestellungen entwickelt</li>
+            <li><input type="checkbox" id="item11" class="mr-2"> Custom Tracking-Events beschrieben und korrekt implementiert</li>
+            <li><input type="checkbox" id="item12" class="mr-2"> Sinnvolle Hypothesen und Fragestellungen entwickelt</li>
         </ul>
 
-        <h3 class="text-xl font-semibold mt-4">2. Wissenschaftliches Arbeiten (20%)</h3>
+        <h3 class="text-xl font-semibold mt-4 text-blue-300">2. Wissenschaftliches Arbeiten (20%)</h3>
         <ul class="list-disc list-inside">
-            <li><input type="checkbox" id="item13"> Quellen korrekt geprüft, bewertet und zitiert</li>
-            <li><input type="checkbox" id="item14"> Fachbegriffe präzise definiert und angewendet</li>
+            <li><input type="checkbox" id="item13" class="mr-2"> Quellen korrekt geprüft, bewertet und zitiert</li>
+            <li><input type="checkbox" id="item14" class="mr-2"> Fachbegriffe präzise definiert und angewendet</li>
         </ul>
 
-        <h3 class="text-xl font-semibold mt-4">3. Kommunikative Kompetenz (20%)</h3>
+        <h3 class="text-xl font-semibold mt-4 text-blue-300">3. Kommunikative Kompetenz (20%)</h3>
         <ul class="list-disc list-inside">
-            <li><input type="checkbox" id="item15"> Klare, präzise und verständliche Sprache verwendet</li>
-            <li><input type="checkbox" id="item16"> Fachsprachlicher Ausdruck sicher und überzeugend</li>
-            <li><input type="checkbox" id="item17"> Komplexe Sachverhalte verständlich dargestellt</li>
-            <li><input type="checkbox" id="item18"> Reflexionsfähigkeit bei Analysen demonstriert</li>
+            <li><input type="checkbox" id="item15" class="mr-2"> Klare, präzise und verständliche Sprache verwendet</li>
+            <li><input type="checkbox" id="item16" class="mr-2"> Fachsprachlicher Ausdruck sicher und überzeugend</li>
+            <li><input type="checkbox" id="item17" class="mr-2"> Komplexe Sachverhalte verständlich dargestellt</li>
+            <li><input type="checkbox" id="item18" class="mr-2"> Reflexionsfähigkeit bei Analysen demonstriert</li>
         </ul>
 
-        <h3 class="text-xl font-semibold mt-4">4. Medienkompetenz (10%)</h3>
+        <h3 class="text-xl font-semibold mt-4 text-blue-300">4. Medienkompetenz (10%)</h3>
         <ul class="list-disc list-inside">
-            <li><input type="checkbox" id="item19"> Sicherer Umgang mit eingesetzten Medien</li>
-            <li><input type="checkbox" id="item20"> Medien passend und effektiv für die Darstellung genutzt</li>
+            <li><input type="checkbox" id="item19" class="mr-2"> Sicherer Umgang mit eingesetzten Medien</li>
+            <li><input type="checkbox" id="item20" class="mr-2"> Medien passend und effektiv für die Darstellung genutzt</li>
         </ul>
 
-        <h2 class="text-2xl font-semibold text-blue-600 mt-6">Zusatz: Leitfragen für die Präsentation</h2>
+        <h2 class="text-2xl font-semibold text-purple-400 mt-6">Zusatz: Leitfragen für die Präsentation</h2>
         <ul class="list-disc list-inside">
-            <li><input type="checkbox" id="item21"> Wie wird das Tracking an die DSGVO-Anforderungen angepasst?</li>
-            <li><input type="checkbox" id="item22"> Welche Vorteile bietet die Nutzung des Data-Layers für Events vor der Zustimmung?</li>
-            <li><input type="checkbox" id="item23"> Welche Hypothesen konnten durch erste Daten geprüft werden?</li>
-            <li><input type="checkbox" id="item24"> Wie wird sichergestellt, dass die Datenanalyse nicht von kognitiven Verzerrungen beeinflusst wird?</li>
-            <li><input type="checkbox" id="item25"> Welche Fragestellungen oder Optimierungsansätze ergeben sich aus den ersten Tracking-Daten?</li>
+            <li><input type="checkbox" id="item21" class="mr-2"> Wie wird das Tracking an die DSGVO-Anforderungen angepasst?</li>
+            <li><input type="checkbox" id="item22" class="mr-2"> Welche Vorteile bietet die Nutzung des Data-Layers für Events vor der Zustimmung?</li>
+            <li><input type="checkbox" id="item23" class="mr-2"> Welche Hypothesen konnten durch erste Daten geprüft werden?</li>
+            <li><input type="checkbox" id="item24" class="mr-2"> Wie wird sichergestellt, dass die Datenanalyse nicht von kognitiven Verzerrungen beeinflusst wird?</li>
+            <li><input type="checkbox" id="item25" class="mr-2"> Welche Fragestellungen oder Optimierungsansätze ergeben sich aus den ersten Tracking-Daten?</li>
         </ul>
     </div>
 
-    <footer class="text-center mt-10 py-4 bg-gray-200 text-gray-600">
+    <footer class="text-center mt-10 py-4 bg-gray-800 text-gray-400">
         &copy; 2025 Erweiterte Checkliste - Entwickelt für GitHub Pages
     </footer>
 
